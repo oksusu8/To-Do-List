@@ -1,0 +1,100 @@
+* {
+    margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    width: 100%; height: 100vh;
+    /*background-color: #7895b2; background-color: #aebdca;*/
+    background-color: #7895b2;
+    overflow: hidden; 
+    position: relative; /*추가사항*/
+}
+
+#wrap {
+    margin: 100px auto; max-width: 600px; 
+    /*background-color: #f5efe6;*/
+    background-color: #f5efe6;
+    border-radius: 13px;
+    padding: 27px 0;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 20%);
+    position: relative; /*추가사항*/
+}
+/* 투두리스트 제목*/
+header {
+    font-size: 40px; font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#add_work {
+    position: relative;
+    height: 52px; padding: 0 25px;
+
+}
+
+#add_work input {
+    width: 100%; height: 100%;
+    padding: 0 53px 0 20px;
+    outline: none;
+    font-size: 18px; border-radius: 4px; 
+    border: 1px solid rgba(217, 217, 217, 0.6);
+}
+
+#add_work input:focus {
+    outline: none;
+    border: 2px solid #7895b2;
+}
+
+#add_work button {
+    position: absolute; top: 45%; transform: translate(-55px, -45%);
+    width: 50px; height: 40px;
+    font-size: 25px; font-weight: bold;
+    background-color: white;
+    border: none; outline: none;
+}
+
+#date {
+    display: flex; justify-content: center;
+    /*border-bottom: 1px solid rgb(190, 190, 190);*/
+    margin: 15px 0 18px 0; border-radius:2px;
+    padding: 10px 0;
+    background-color: rgb(188, 188, 188);
+
+}
+
+.list {
+    list-style : none;
+    position: relative; width: 100%; height: 50px;
+    border-radius: 4px; border-bottom: 1px solid lightgray;
+    font-size: 17px;
+    margin-bottom: 18px; 
+    padding-bottom: 16px; padding-left: 25px; padding-right: 50px;
+    line-height: center;
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+.list > p {
+    position: absolute; top: 4px; bottom: 4px; left: 55px;
+    font-size: 17px; font-weight: bold;
+}
+
+.list > button {
+    width: 30px; height: 30px;
+    position: absolute; top: 3px; right: 10px; 
+    border: none; background-color: #f5efe6; 
+    font-size: 20px; color: rgb(110, 110, 110);
+}
+
+.list > input {
+    position: absolute; top: 3px;
+    width: 17px; height: 17px;
+}
+
+.selected {
+    color: rgb(176, 176, 176);
+    text-decoration: line-through;
+    
+}
+.selected > p {
+    text-decoration: line-through;
+}
